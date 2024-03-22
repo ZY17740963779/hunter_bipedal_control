@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 project(legged_interface)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-
+# set(CMAKE_PREFIX_PATH /home/zypc/Humanoid_robot_simulation/ws_ocs2/devel/share/)
 find_package(catkin REQUIRED
         COMPONENTS
         roscpp

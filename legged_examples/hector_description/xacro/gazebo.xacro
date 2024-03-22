@@ -31,17 +31,6 @@
         <material>Gazebo/DarkGrey</material>
     </gazebo>
 
-     <gazebo reference="trunkcol">
-        <mu1>0.2</mu1>
-        <mu2>0.2</mu2>
-       
-    </gazebo>
-
-    <gazebo reference="stick_link">
-        <mu1>0.2</mu1>
-        <mu2>0.2</mu2>
-        <material>Gazebo/White</material>
-    </gazebo>
 
     <gazebo reference="imu_link">
         <mu1>1</mu1>
@@ -90,6 +79,24 @@
         <material>Gazebo/Grey</material>
         
     </gazebo>
+    <gazebo reference="L_toe_f1_link">
+        <mu1>1.5</mu1>
+        <mu2>1.5</mu2>
+        <self_collide>1</self_collide>
+        <kp value="1000000.0"/>
+        <kd value="100.0"/>
+        <maxVel>1.0</maxVel>
+        <minDepth>0.00</minDepth>
+    </gazebo>
+    <gazebo reference="L_toe_f2_link">
+        <mu1>1.5</mu1>
+        <mu2>1.5</mu2>
+        <self_collide>1</self_collide>
+        <kp value="1000000.0"/>
+        <kd value="100.0"/>
+        <maxVel>1.0</maxVel>
+        <minDepth>0.00</minDepth>
+    </gazebo>
 
     <!--R leg -->
     <gazebo reference="R_hip">
@@ -132,4 +139,22 @@
         
     </gazebo>
 
+    <gazebo reference="R_toe_f1_link">
+        <mu1>1.5</mu1>
+        <mu2>1.5</mu2>
+        <self_collide>1</self_collide>
+        <kp value="1000000.0"/>
+        <kd value="100.0"/>
+        <maxVel>1.0</maxVel>
+        <minDepth>0.00</minDepth>
+    </gazebo>
+    <gazebo reference="R_toe_f2_link">
+        <mu1>1.5</mu1>
+        <mu2>1.5</mu2>
+        <self_collide>1</self_collide>
+        <kp value="1000000.0"/>
+        <kd value="100.0"/>
+        <maxVel>1.0</maxVel>
+        <minDepth>0.00</minDepth>
+    </gazebo>
 </robot>

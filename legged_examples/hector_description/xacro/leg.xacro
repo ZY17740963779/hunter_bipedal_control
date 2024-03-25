@@ -321,10 +321,10 @@
         <!--新增四個足部接觸點-->
         <joint name="${name}_toe_fixed_1" type="fixed">
             <xacro:if value="${(mirror_dae == True)}">
-                <origin xyz="0.08 0.015 -0.02" rpy="0 0 0" />
+                <origin xyz="0.08 0.02 -0.02" rpy="0 0 0" />
             </xacro:if>
             <xacro:if value="${(mirror_dae == False)}">
-                <origin xyz="0.08 -0.015 -0.02" rpy="0 0 0" />
+                <origin xyz="0.08 -0.02 -0.02" rpy="0 0 0" />
             </xacro:if>
             <parent link="${name}_toe" />
             <child link="${name}_toe_f1_link" />
@@ -350,10 +350,10 @@
 
         <joint name="${name}_toe_fixed_2" type="fixed">
             <xacro:if value="${(mirror_dae == True)}">
-                <origin xyz="-0.06 0.015 -0.02" rpy="0 0 0" />
+                <origin xyz="-0.06 0.02 -0.02" rpy="0 0 0" />
             </xacro:if>
             <xacro:if value="${(mirror_dae == False)}">
-                <origin xyz="-0.06 -0.015 -0.02" rpy="0 0 0" />
+                <origin xyz="-0.06 -0.02 -0.02" rpy="0 0 0" />
             </xacro:if>
             <parent link="${name}_toe" />
             <child link="${name}_toe_f2_link" />
